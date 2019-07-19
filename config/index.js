@@ -5,6 +5,6 @@ export default {
     },
     weapp: {
         AppID: "xxx",
-        AppSecret: "xxxx"
+        AppSecret: "xxxxxxx"
     }
 }

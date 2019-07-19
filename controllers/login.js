@@ -36,13 +36,13 @@ class Login {
       );
     });
   }
-  loginAction = async (ctx) => {
+  loginAction = async (ctx) => { 
+    // 调用/user/login
     const {
       encryptedData,
       code,
       iv
     } = ctx.query
-
     const {
       AppID,
       AppSecret

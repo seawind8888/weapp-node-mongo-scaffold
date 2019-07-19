@@ -14,7 +14,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.5",
-	"appid": "wxa967f0fe765f6cdc",
+	"appid": "",
 	"projectname": "weapp-mongp-demo",
 	"debugOptions": {
 		"hidedInDevtools": []
