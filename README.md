@@ -35,7 +35,7 @@ weapp: {
 npm run dev
 ```
 ## 同步登陆流程
-
+![image](./screenshot/weapp-login.png)
 
 ## 目录结构
 ```
