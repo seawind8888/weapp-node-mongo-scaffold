@@ -1,11 +1,11 @@
-# weapp-koa2-mongo-scaffold
+# weapp-node-mongo-scaffold
 此项目为微信小程序与mongodb数据交互解决方案，使用koa + mongodb结构，jwt鉴权
 
 ## 开始使用
 
 1. Clone项目
 ```
-git clone https://github.com/seawind8888/weapp-koa2-mongo-scaffold my-project
+git clone https://github.com/seawind8888/weapp-node-mongo-scaffold my-project
 ```
 
 2. 安装依赖
