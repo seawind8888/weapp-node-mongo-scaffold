@@ -19,7 +19,7 @@ const router = new Router();
 
 
 mongoose.Promise = Promise
-mongoose.connect(`mongodb://localhost:${config.mongodb.port}/koa2Wechat`, { useNewUrlParser: true });
+mongoose.connect(`mongodb://localhost:27017/koa2Wechat`, { useNewUrlParser: true });
 
 
 // app.use(authTokenCheck);

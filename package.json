@@ -1,7 +1,8 @@
 {
-  "name": "koa2-mongo-weapp",
+  "name": "weapp-koa2-mongo-scaffold",
   "version": "1.0.0",
   "description": "",
+  "auther": "seawind8888",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

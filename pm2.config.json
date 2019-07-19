@@ -1,5 +1,5 @@
 {
-    "name"        : "koa2-mongo-scaffold", 
+    "name"        : "weapp-koa2-mongo-scaffold", 
     "script"      : "index", 
     "log_date_format"  : "YYYY-MM-DD HH:mm:SS",
     "error_file" : "logs/app1-err.log",
