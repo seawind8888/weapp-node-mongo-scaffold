@@ -1,12 +1,12 @@
 <!--index.wxml-->
 <view class="container">
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登录获取头像昵称 </button>
+    <button wx:if="{{!hasUserInfo && canIUse}}" style="background-color: #07c160;color: #ffffff" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 微信同步登陆获取信息 </button>
     <block wx:else>
       <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname" >{{userInfo.nickName}}</text>
     </block>
-    <button style="margin-top:20px" bindtap="getLoginInfo"> 获取登录后信息 </button>
+    <button style="margin-top:20px;" bindtap="getLoginInfo">登录后测试接口</button>
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>

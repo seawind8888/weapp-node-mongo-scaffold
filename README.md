@@ -1,5 +1,5 @@
 # weapp-node-mongo-scaffold
-此项目为微信小程序与mongodb数据交互解决方案，使用koa2 + mongoose结构，使用koa-jwt鉴权
+此项目为解决微信小程序与mongodb数据互通，科实现微信小程序同步登陆获取用户信息，使用koa2 + mongoose结构，使用koa-jwt鉴权
 
 ## 开始使用
 
@@ -34,6 +34,8 @@ weapp: {
 ```
 npm run dev
 ```
+## 同步登陆流程
+
 
 ## 目录结构
 ```

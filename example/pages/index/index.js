@@ -11,6 +11,7 @@ Page({
   },
   //事件处理函数
   onLoad: function () {
+    
   },
   getLoginInfo: function(e) {
        wx.request({
@@ -42,30 +43,31 @@ Page({
   getUserInfo: function(e) {
     const _self = this
      wx.login({
-      success: res => {
-        wx.request({
-          url: 'http://localhost:3008/user/login',
-          data: {
-            code: res.code
-          },
-          success (res) {
-            const {data} = res
-            wx.showToast({
-              title: '登录成功'
-            })
-            wx.setStorageSync('TOKEN', data.Token);
-            wx.getUserInfo({
-                  success: res => {
-                    app.globalData.userInfo = res.userInfo
-                    _self.setData({
-                      userInfo: res.userInfo,
-                      hasUserInfo: true
-                    })
-                  }
+      success: loginRes => {
+        wx.getUserInfo({
+          success: userRes => {
+            wx.request({
+              url: 'http://localhost:3008/user/login',
+              data: {
+                code: loginRes.code,
+                encryptedData: userRes.encryptedData,
+                iv: userRes.iv,
+                userInfo: userRes.userInfo
+              },
+              success (res) {
+                const {data} = res
+                wx.showModal({
+                  title: '登录成功',
+                  content: data.message
                 })
-         
-            // const {data} = res
-            // wx.setStorageSync('SESSION_KEY', data.sessionKey);
+                wx.setStorageSync('TOKEN', data.Token);
+                app.globalData.userInfo = userRes.userInfo
+                _self.setData({
+                  userInfo: userRes.userInfo,
+                  hasUserInfo: true
+                })
+              }
+            })
           }
         })
       }
